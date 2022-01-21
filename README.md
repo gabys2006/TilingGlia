@@ -32,3 +32,7 @@ Download Automated_AMI_AIS_Quantification_Tutorial.ipynb from this repo, navigat
 ## Test Data
 
 Test data for the tutorial can be downloaded at The Cell Image Library http://www.cellimagelibrary.org/home or you can run the first cell of the tutorial to download it for you. 
+
+## Questions
+
+Please email questions to gabys2006@gmail.com
