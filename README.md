@@ -16,7 +16,7 @@ Not only do glia form close associations with neurons throughout the central ner
 
 To create the Python environment for this tutorial enter the following commands into a terminal:
 
-conda create --name Tiling  
+conda create --name Tiling python=3.7.3  
 conda activate Tiling  
 conda install jupyter  
 conda install numpy  
