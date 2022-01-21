@@ -4,8 +4,11 @@ Automated pipeline to quantify cortex glia morphology and aberrant astrocyte inf
 This tutorial guides you through the pipeline for quantifying cortex glia globularity and aberrant astrocyte infiltration into the cortex:
 
 Step 1: Denoising
+
 Step 2: Thresholding
+
 Step 3A: Quantifying Globularity
+
 Step 3B: Quantifying Infiltration
 
 Please see the accompanying paper Quantifying glial-glial tiling using automated image analysis for a full description of the pipeline. 
