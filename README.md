@@ -1,6 +1,6 @@
 # TilingGlia
 
-The tutorial on this repo is a Jupyter notebook Python guides you through the automated pipeline for quantifying cortex glia morphology and aberrant astrocyte infiltration into the cortex in confocal images of drosophila larval VNC. The tutorial is a Jupyter notebook and the pipeline was created using Python.
+The tutorial on this repo guides you through the automated pipeline for quantifying cortex glia morphology and aberrant astrocyte infiltration into the cortex in confocal images of drosophila larval VNC. The tutorial is a Jupyter notebook and the pipeline was created using Python.
 
 Please see the accompanying paper "Quantifying glial-glial tiling using automated image analysis" for a full description of the pipeline.
 
