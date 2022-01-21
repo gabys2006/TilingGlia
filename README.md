@@ -13,9 +13,9 @@ Not only do glia form close associations with neurons throughout the central ner
 
 <img src="https://user-images.githubusercontent.com/57374720/150566445-bb26d3c3-4974-4be6-a4bc-6ca077f941a3.png" width=700>  
 
-**Preprocessing:** Separate z-stacks into 2D arrays representing a single plane for each cell type (corresponding to a single channel for each).
+**Preprocessing:** Export images from confocal microscope as 3-channel z-stacks. Trim out-of-focus slices from the ends of the stack. 
 
-**Step 1:** Denose individual channel images. 
+**Step 1:** Denoise individual channel images. 
 
 **Step 2:** Threshold 2D arrays to produce binary images. 
 
