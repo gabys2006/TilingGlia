@@ -2,14 +2,28 @@
 
 The tutorial on this repo guides you through the automated pipeline for quantifying cortex glia morphology and aberrant astrocyte infiltration into the cortex in confocal images of drosophila larval VNC. The tutorial is a Jupyter notebook and the pipeline was created using Python.
 
-Please see the accompanying paper "Quantifying glial-glial tiling using automated image analysis" for a full description of the pipeline.
+Please see the accompanying paper "Quantifying glial-glial tiling using automated image analysis" for a full description of the pipeline and its validation.
 
 **Abstract:**
 
 
 Not only do glia form close associations with neurons throughout the central nervous system (CNS), but glial cells also interact closely with other glial cells.  As these cells mature, they undergo a phenomenon known as glial tiling, where they grow to abut one another without invading each other’s boundaries.  Glial tiling occurs throughout the animal kingdom, from fruit flies to humans; however, not much is known about the glial-glial interactions that lead to and maintain this tiling. Drosophila provide a strong model to investigate glial-glial tiling, as tiling occurs among individual glial cells of the same subtype, as well as between those of different subtypes.  Furthermore, the spatial segregation of the CNS allows for the unique ability to visualize and manipulate inter-subtype interactions.  Previous work in Drosophila has suggested an interaction between cortex glia and astrocytes, where astrocytes cross the normal neuropil-cortex boundary in response to dysfunctional cortex glia. Here, we further explore this interaction by implementing an automated pipeline to more fully characterize this astrocyte-cortex glial relationship. By quantifying and correlating the extent of cortex glial dysfunction and aberrant astrocyte infiltration using automated analysis, we maximize the size of the quantified dataset to reveal subtle patterns in astrocyte-cortex glial interactions.  We provide a guide for creating and validating a fully-automated image analysis pipeline for exploring these interactions, and describe a significant correlation between cortex glial dysfunction and aberrant astrocyte infiltration, as well as demonstrate variations in their relationship across different regions of the CNS.
 
+## Automated image analysis pipeline for 3-channel confocal Z-stacks.
+
 <img src="https://user-images.githubusercontent.com/57374720/150566445-bb26d3c3-4974-4be6-a4bc-6ca077f941a3.png" width=700>  
+
+**Preprocessing:** Separate z-stacks into 2D arrays representing a single plane for each cell type (corresponding to a single channel for each).
+
+**Step 1:** Denose individual channel images. 
+
+**Step 2:** Threshold 2D arrays to produce binary images. 
+
+**Step 3A:** Measure cortex glia (CG) perimeter, normalize to total cortex are to produce automated morphology index (AMI) score. 
+
+**Step 3B:** Combine cortex glia and neuronal nuclei channels to define the cortex area (ctx). Calcuate overlap between the cortex and astrocyte (astro) channels. Normalize to total cortex area to produce an automated infiltration score (AIS). 
+
+**Step 4:** Analyze the relationship between AMI (globularity) and AIS (aberrant infiltration). 
 
 ## Instructions for setting up tutorial environment
 
