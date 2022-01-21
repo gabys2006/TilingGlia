@@ -1,6 +1,6 @@
 # TilingGlia
 
-The tutorial on this repo guides you through the automated pipeline for quantifying cortex glia morphology and aberrant astrocyte infiltration into the cortex in confocal images of drosophila larval VNC. 
+The tutorial on this repo is a Jupyter notebook Python guides you through the automated pipeline for quantifying cortex glia morphology and aberrant astrocyte infiltration into the cortex in confocal images of drosophila larval VNC. The tutorial is a Jupyter notebook and the pipeline was created using Python.
 
 Please see the accompanying paper "Quantifying glial-glial tiling using automated image analysis" for a full description of the pipeline.
 
@@ -12,4 +12,24 @@ Not only do glia form close associations with neurons throughout the central ner
 
 ![Fig2V10](https://user-images.githubusercontent.com/57374720/150566445-bb26d3c3-4974-4be6-a4bc-6ca077f941a3.png)
 
-Test data for the tutorial can be downloaded at The Cell Image Library http://www.cellimagelibrary.org/home. 
+## Instructions for setting up tutorial environment
+
+To create the Python environment for this tutorial enter the following commands into a terminal:
+
+conda create --name Tiling  
+conda activate Tiling  
+conda install jupyter  
+conda install numpy  
+conda install pandas  
+conda install scikit-image  
+conda install pywget  
+
+Run a jupyter notebook instance in that environment:
+
+jupyter notebook
+
+Download Automated_AMI_AIS_Quantification_Tutorial.ipynb from this repo, navigate to it in Jupyter notebook, and run it. 
+
+## Test Data
+
+Test data for the tutorial can be downloaded at The Cell Image Library http://www.cellimagelibrary.org/home or you can run the first cell of the tutorial to download it for you. 
