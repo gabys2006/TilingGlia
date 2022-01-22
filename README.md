@@ -69,7 +69,7 @@ Download Automated_AMI_AIS_Quantification_Tutorial.ipynb from this repo, navigat
 
 ## Test Data
 
-Test data for the tutorial can be downloaded at The Cell Image Library http://www.cellimagelibrary.org/home or you can run the first cell of the tutorial to download it for you. Dataset consists of 60 2D 3-channel tifs depcting the _Drosophila_ larval VNC stained for astrocytes, cortex glia and neuronal nuclei. 
+Test data for the tutorial can be downloaded at [The Cell Image Library](http://www.cellimagelibrary.org/home) or you can run the first cell of the tutorial to download it for you. Dataset consists of 60 2D 3-channel tifs depcting the _Drosophila_ larval VNC stained for astrocytes, cortex glia and neuronal nuclei. 
 
 ## Questions
 
