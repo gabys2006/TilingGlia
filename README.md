@@ -37,6 +37,9 @@ Python code for validating globularity quantification by comparing manual globul
 ### Cortex_Segmentation_Optimization.py
 Python code for optimizing the cortex segmentation function by comparing automated to manual segmentation. 
 
+### Cell_Body_Identification.py
+Python code for labeling and measuring features of ojects in preliminary infiltration. 
+
 ### AIS_Validation.py
 Python code for validating AIS by comparing automated to manual infiltration quantification. 
 
