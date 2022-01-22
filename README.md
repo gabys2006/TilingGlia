@@ -12,9 +12,7 @@ Not only do glia form close associations with neurons throughout the central ner
 
 <img src="https://user-images.githubusercontent.com/57374720/150566445-bb26d3c3-4974-4be6-a4bc-6ca077f941a3.png" width=700>  
 
-Our finalized image analysis pipeline consists of the steps below. 
-
-**Preprocessing:** Export images from confocal microscope as 3-channel z-stacks. Trim out-of-focus slices from the ends of the stack. 
+Our finalized image analysis pipeline consists of the following steps:
 
 **Step 1:** Denoise individual channel images. 
 
