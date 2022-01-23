@@ -61,9 +61,14 @@ Python code for analyzing global scores, the average of the scores for all slice
 ### Local_Score_Analysis.py
 Python code for analyzing local scores, the average of the scores of a subset of slices in a z-stack. A local score represents the average score of a small region of the VNC of a single animal. 
 
-## Instructions for setting up tutorial environment
+## Istructions for running code on this repo:
 
-To create the Python environment for this tutorial enter the following commands into a terminal:
+### [Install Python](https://www.python.org/downloads/)
+You can find a tutorial [here](https://realpython.com/installing-python/). 
+
+### [Install Anaconda](https://docs.anaconda.com/anaconda/install/index.html)
+
+### To create the Python environment for the tutorial and code on this repo enter the following commands into a terminal:
 
 conda create --name Tiling python=3.7.3  
 conda activate Tiling  
@@ -73,15 +78,16 @@ conda install pandas
 conda install scikit-image  
 conda install pywget  
 
+### To run the tutorial:
 Run a jupyter notebook instance in that environment:
 
 jupyter notebook
 
-Download Automated_AMI_AIS_Quantification_Tutorial.ipynb from this repo, navigate to it in Jupyter notebook, and run it. 
+Download Tutorial.ipynb from this repo, navigate to it in Jupyter notebook, and run it. 
 
 ## Test Data
 
-Test data for the tutorial can be downloaded at [The Cell Image Library](http://www.cellimagelibrary.org/home) or you can run the first cell of the tutorial to download it for you. Dataset consists of 60 2D 3-channel tifs depcting the _Drosophila_ larval VNC stained for astrocytes, cortex glia and neuronal nuclei. 
+Test data for the tutorial can be downloaded at [The Cell Image Library](http://www.cellimagelibrary.org/home). Dataset consists of 60 2D 3-channel tifs depcting the _Drosophila_ larval VNC stained for astrocytes, cortex glia and neuronal nuclei. 
 
 ## Questions
 
