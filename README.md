@@ -29,7 +29,7 @@ Our finalized image analysis pipeline consists of the following steps:
 ### Tutorial.pynb
 Juypter notebook providing an explanation for using the automated pipeline. It allows for testing the denoising, thresholding and quantification steps using a small test dataset we have provided (see below for downloading). It also provides a short explanation for performing an analysis of the resulting scores (full code also provided in this repo). 
 
-We performed optimization and/or validation for the denoising, thresholding, and quantification steps of the pipeline. The troubleshooting sections for the denoising and thresholding steps include the code used to optimize these steps and can be tested using the sample test data. The troubleshooting sections for the quantification step include a short explanation of the optimization and validation performed for this step (full code also provided in this repo). 
+We performed optimization and/or validation for the denoising, thresholding, and quantifying steps of the pipeline. The troubleshooting sections for the denoising and thresholding steps include the code used to optimize these steps and can be tested using the sample test data. The troubleshooting sections for the quantification step include a short explanation of the optimization and validation performed for this step (full code also provided in this repo). 
 
 ### Neuron_Choose_Binarizer.py
 Python code for choosing a thresholding algorithm for the neuron channel. 
@@ -47,7 +47,7 @@ Python code for validating globularity quantification by comparing manual globul
 Python code for optimizing the cortex segmentation function by comparing automated to manual segmentation. 
 
 ### Cell_Body_Identification.py
-Python code for labeling and measuring features of ojects in preliminary infiltration. 
+Python code for labeling and measuring features of objects in preliminary infiltration. 
 
 ### AIS_Validation.py
 Python code for validating AIS by comparing automated to manual infiltration quantification. 
@@ -79,14 +79,16 @@ conda install scikit-image
 conda install pywget  
 
 ### To run the tutorial:
-Run a jupyter notebook instance in that environment:
+Run a jupyter notebook instance in that environment by entering the following command into a terminal:
 
 jupyter notebook
 
 Download Tutorial.ipynb from this repo, navigate to it in Jupyter notebook, and run it. 
 
-## Test Data
+### To run Python scripts:
+Download script and run directly from command line or use your favorite IDE. You can find a tutorial [here](https://realpython.com/run-python-scripts/)
 
+## Test Data
 Test data for the tutorial can be downloaded at [The Cell Image Library](http://www.cellimagelibrary.org/home). Dataset consists of 60 2D 3-channel tifs depcting the _Drosophila_ larval VNC stained for astrocytes, cortex glia and neuronal nuclei. 
 
 ## Questions
