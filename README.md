@@ -31,6 +31,9 @@ Juypter notebook providing an explanation for using the automated pipeline. It a
 
 We performed optimization and/or validation for the denoising, thresholding, and quantifying steps of the pipeline. The troubleshooting sections for the denoising and thresholding steps include the code used to optimize these steps and can be tested using the sample test data. The troubleshooting sections for the quantification step include a short explanation of the optimization and validation performed for this step (full code also provided in this repo). 
 
+### Denoising_Optimization.py
+Python code for optimizing denoising using the unsharp mask. 
+
 ### Neuron_Binarizer_Optimization.py
 Python code for optimizing a binarization algorithm for the neuron channel. 
 
