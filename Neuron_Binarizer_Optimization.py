@@ -13,11 +13,50 @@ FOR OPTIMIZING NEURON CHANNEL BINARIZER
 import skimage.io
 import os
 import matplotlib.pyplot as plt
-from skimage.filters import unsharp_mask, threshold_otsu, threshold_triangle, threshold_li
+from skimage.filters import unsharp_mask, threshold_otsu, threshold_triangle, threshold_li, try_all_threshold
 from skimage.morphology import remove_small_objects
 import numpy as np 
 
 #%%
+def try_all_threshold_on_set(dataDir, resultsDir, channel):
+    '''runs scikit-image's try_all threshold function on all test images
+
+    -----PARAMETERS-----
+    dataDir: filepath to directory containing test data
+        3D arrays representing 2D images in the form (pixel_row, pixel_column, channel)
+    resultsDir: filepath to directory for storing results. 
+    channel: integer indicating channel to be tested
+    
+    ----RETURNS----
+    For each test image, produces a figure showing denoised grayscale image
+    and results from global thresholding algorithms. 
+    Figures are stored in resultsDir directory.
+    '''
+
+    #create results directory
+    if not os.path.exists(resultsDir):
+        os.makedirs(resultsDir)
+    #for each image
+    for root, directory, file in os.walk(dataDir):
+        for f in file:
+            if '.tif' in f:
+                ipath=os.path.join(root, f)
+                #load image with skimage
+                fullimg=skimage.io.imread(ipath, plugin="tifffile")
+                #isolate channel
+                original=fullimg[:, :, channel]                
+                #denoise image
+                unsharp_img = unsharp_mask(original, radius=20, amount=2)
+                #try global thresholds
+                try_all_threshold(unsharp_img, figsize=(4, 6), verbose=False)
+                #save results
+                imgID = f.replace('.tif', '')
+                figpath=os.path.join(resultsDir, imgID + '_THRESHOLD' + '.png')
+                plt.savefig(figpath, format='png', pad_inches=0.3, bbox_inches='tight')
+                plt.close()
+    return ('DONE')
+
+
 def neuron_binarizer_optimization (dataDir, resultsDir, channel):
     '''For troubleshooting neuron channel binarization. 
     Selects optimal thresholdingn algorithm from otsu, li, triangle methods
@@ -154,6 +193,15 @@ def neuron_binarizer_optimization (dataDir, resultsDir, channel):
                 #suppress output showing every figure
                 plt.close()
     return('DONE')
+
+#%%# RUN TRY_ALL_THRESHOLD_ON_SET ON ALL IMAGES IN TEST SET
+
+dataDir='TestImages'
+resultsDir = 'NeuronThresh'
+channel = 2
+
+test = neuron_binarizer_optimization (dataDir, resultsDir, channel)
+print(test)
 
 #%%# RUN NEURON_BINARIZER_OPTIMIZATION ON ALL IMAGES IN TEST SET
 
