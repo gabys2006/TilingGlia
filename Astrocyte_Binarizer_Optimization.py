@@ -57,20 +57,20 @@ def try_all_threshold_on_set(dataDir, resultsDir, channel):
 
 def astrocyte_binarizer_optimization (dataDir, resultsDir, channel):
     '''For troubleshooting astrocyte channel binarization. 
-    Selects optimal thresholding algorithm from otsu, triangle and yen methods
+    Selects optimal thresholdingn algorithm from otsu, triangle and yen methods
 
     ----PARAMETERS----
     dataDir: filepath to directory containing test data
         3D arrays representing 2D images in the form (pixel_row, pixel_column, channel)
     resultsDir: filepath to directory for storing results. 
-    channel: integer indicating neuron channel
+    channel: integer indicating astrocyte channel
 
     ----RETURNS----
     For each test image, produces a figure showing the results of each thresholding algorithm
     and indicating which algorithm would be selected as optimal.
     Notes the values for the two metrics used for selecting optimal algorithm:
-        percent of pixels removed from otsu image by despeckling
-        percent true pixels in otsu image
+        proportion of true pixels in triangle subsection
+        proportion true pixels in otsu subsection
     Figures are stored in resultsDir directory.
     '''
     #create results directory
@@ -114,6 +114,7 @@ def astrocyte_binarizer_optimization (dataDir, resultsDir, channel):
                 #check if otsu is blown out (overestimating true signal)
                 #grab subsection that tends to get blown out
                 o_sub=otsu[800:1200, :]    
+                #calculate number of true pixels in the subsection
                 o_overblown=np.sum(o_sub.astype(float))
                 o_overblown=o_overblown/(np.shape(o_sub)[0]*np.shape(o_sub)[1])
                 
