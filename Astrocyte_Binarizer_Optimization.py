@@ -158,8 +158,7 @@ def astrocyte_binarizer_optimization (dataDir, resultsDir, channel):
                 ax[1].imshow(unsharp_img)
                 ax[1].set_title('Denoised')
                 #original otsu image without despeckling
-                ax[2].imshow(otsu)
-                ax[2].set_title('Otsu')
+                ax[2].remove()
                 #image thresholded by optimal algorithm
                 ax[3].imshow(good)
                 #note the percent of true pixels in otsu subsection 
