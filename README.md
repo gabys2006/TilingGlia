@@ -92,7 +92,7 @@ Download Tutorial.ipynb from this repo, navigate to it in Jupyter notebook, and 
 Download script and run directly from command line or use your favorite IDE. You can find a tutorial [here](https://realpython.com/run-python-scripts/)
 
 ## Test Data
-Test data for the tutorial can be downloaded at [The Cell Image Library](http://www.cellimagelibrary.org/home). Dataset consists of 45 2D 3-channel tifs depcting the _Drosophila_ larval VNC stained for astrocytes, cortex glia and neuronal nuclei. 
+Test data for the tutorial can be downloaded at [The Cell Image Library](http://www.cellimagelibrary.org/home). Dataset consists of 45 2D 3-channel tifs depicting the _Drosophila_ larval VNC stained for astrocytes, cortex glia and neuronal nuclei. 
 
 ## Questions
 
