@@ -175,8 +175,8 @@ def neuron_binarizer_optimization (dataDir, resultsDir, channel):
                 ax[3].imshow(good)
                 #note the percent of pixels removed from otsu image by despeckling
                 #note the percent of true pixels in otsu image
-                ax[3].set_title('Picked: ' + gthresh + '   (' +str(round(desp_fix*100, 3)) 
-                                + ', ' + str(round(blackout*100, 3)) + ')' ) 
+                ax[3].set_title('Picked: ' + gthresh + '   (' +str(round(desp_fix, 3)) 
+                                + ', ' + str(round(blackout, 3)) + ')' ) 
                 #image thresholded by suboptimal algorithm #1 
                 ax[4].imshow(bad1)
                 ax[4].set_title(bthresh1)
