@@ -62,7 +62,7 @@ def neuron_binarizer_optimization (dataDir, resultsDir, channel):
     Selects optimal thresholdingn algorithm from otsu, li, triangle methods
 
     ----PARAMETERS----
-    filepath to directory containing test data
+    dataDir: filepath to directory containing test data
         3D arrays representing 2D images in the form (pixel_row, pixel_column, channel)
     resultsDir: filepath to directory for storing results. 
     channel: integer indicating neuron channel
