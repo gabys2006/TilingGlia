@@ -57,7 +57,7 @@ def try_all_threshold_on_set(dataDir, resultsDir, channel):
 
 def astrocyte_binarizer_optimization (dataDir, resultsDir, channel):
     '''For troubleshooting astrocyte channel binarization. 
-    Selects optimal thresholdingn algorithm from otsu, triangle and yen methods
+    Selects optimal thresholding algorithm from otsu, triangle and yen methods
 
     ----PARAMETERS----
     dataDir: filepath to directory containing test data
