@@ -71,8 +71,8 @@ def neuron_binarizer_optimization (dataDir, resultsDir, channel):
     For each test image, produces a figure showing the results of each thresholding algorithm
     and indicating which algorithm would be selected as optimal.
     Notes the values for the two metrics used for selecting optimal algorithm:
-        percent of pixels removed from otsu image by despeckling
-        percent true pixels in otsu image
+        proportion of pixels removed from otsu image by despeckling
+        proportion true pixels in otsu image
     Figures are stored in resultsDir directory.
     '''
     #create results directory
