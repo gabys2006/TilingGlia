@@ -10,9 +10,9 @@ Not only do glia form close associations with neurons throughout the central ner
 
 ## Automated image analysis pipeline for 3-channel confocal Z-stacks.
 
-<img src="https://user-images.githubusercontent.com/57374720/150566445-bb26d3c3-4974-4be6-a4bc-6ca077f941a3.png" width=700>  
+<img src="https://user-images.githubusercontent.com/57374720/150917981-079885c1-86ce-49e6-9d73-3a3cebb47583.png" width=700>  
 
-Our finalized image analysis pipeline consists of the following steps:
+Our image analysis pipeline consists of the following steps:
 
 **Step 1:** Denoise individual channel images. 
 
@@ -92,7 +92,7 @@ Download Tutorial.ipynb from this repo, navigate to it in Jupyter notebook, and 
 Download script and run directly from command line or use your favorite IDE. You can find a tutorial [here](https://realpython.com/run-python-scripts/)
 
 ## Test Data
-Test data for the tutorial can be downloaded at [The Cell Image Library](http://www.cellimagelibrary.org/home). Dataset consists of 60 2D 3-channel tifs depcting the _Drosophila_ larval VNC stained for astrocytes, cortex glia and neuronal nuclei. 
+Test data for the tutorial can be downloaded at [The Cell Image Library](http://www.cellimagelibrary.org/home). Dataset consists of 45 2D 3-channel tifs depcting the _Drosophila_ larval VNC stained for astrocytes, cortex glia and neuronal nuclei. 
 
 ## Questions
 
