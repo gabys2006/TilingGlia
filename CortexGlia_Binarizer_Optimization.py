@@ -13,7 +13,7 @@ FOR OPTIMIZING NEURON CHANNEL BINARIZER
 import skimage.io
 import os
 import matplotlib.pyplot as plt
-from skimage.filters import unsharp_mask, threshold_otsu, threshold_triangle, try_all_threshold, threshold_yen
+from skimage.filters import unsharp_mask, threshold_otsu, threshold_triangle
 import numpy as np 
 from skimage.morphology import remove_small_objects
 
