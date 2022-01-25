@@ -200,7 +200,7 @@ dataDir='TestImages'
 resultsDir = 'NeuronThresh'
 channel = 2
 
-test = neuron_binarizer_optimization (dataDir, resultsDir, channel)
+test = try_all_threshold_on_set (dataDir, resultsDir, channel)
 print(test)
 
 #%%# RUN NEURON_BINARIZER_OPTIMIZATION ON ALL IMAGES IN TEST SET
