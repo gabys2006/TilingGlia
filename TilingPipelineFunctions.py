@@ -1037,10 +1037,10 @@ def quantify_slice(fullimg, sliceID,
     #calculate AIS
     #no troubleshooting image
     if return_troubleshooting_img == False:
-        AIS = calc_AIS(cgBIN, astroBIN, ctxArea)
+        AIS = calc_AIS(cortexBIN, astroBIN, ctxArea)
     #for saving troubleshoothing image
     else:
-        AIS = calc_AIS(cgBIN, astroBIN, ctxArea, 
+        AIS = calc_AIS(cortexBIN, astroBIN, ctxArea, 
                        return_troubleshooting_img=True, resultsDir=resultsDir,
                        sliceID=sliceID)
     return ((GT, sliceID, AMI, AIS))
