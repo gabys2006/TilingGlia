@@ -46,11 +46,11 @@ Python code for optimizing a binarization algorithm for the astrocyte channel.
 ### CortexGlia_Binarizer_Optimization.py
 Python code for optimizing a binarization algorithm for the cortex glia channel. 
 
-### AMI_Validation.py
-Python code for validating globularity quantification by comparing manual globularity scores to AMI. 
-
 ### Cortex_Segmentation_Optimization.py
 Python code for optimizing the cortex segmentation function by comparing automated to manual segmentation. 
+
+### AMI_Validation.py
+Python code for validating globularity quantification by comparing manual globularity scores to AMI. 
 
 ### Cell_Body_Identification.py
 Python code for labeling and measuring features of objects in preliminary infiltration. 
