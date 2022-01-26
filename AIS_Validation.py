@@ -5,6 +5,9 @@
 Created on Tue Apr 20 13:31:12 2021
 
 @author: gabrielasalazar
+
+VALIDATE AIS BY COMPARING MANUAL AND AUTOMATED SCORES. 
+
 """
 
 #%%
