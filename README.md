@@ -26,10 +26,13 @@ Our image analysis pipeline consists of the following steps:
 
 ## Files in this repo
 
+### TilingPipelineFunctions.py
+Python code containing all functions used in the image analysis pipeline. 
+
 ### Tutorial.pynb
 Juypter notebook providing an explanation for using the automated pipeline. It allows for testing the denoising, thresholding and quantification steps using a small test dataset we have provided (see below for downloading). It also provides a short explanation for performing an analysis of the resulting scores (full code also provided in this repo). 
 
-We performed optimization and/or validation for the denoising, thresholding, and quantifying steps of the pipeline. The troubleshooting sections for the denoising and thresholding steps include the code used to optimize these steps and can be tested using the sample test data. The troubleshooting sections for the quantification step include a short explanation of the optimization and validation performed for this step (full code also provided in this repo). 
+We performed optimization and/or validation for the denoising, thresholding, and quantifying steps of the pipeline. The troubleshooting sections for the denoising and thresholding steps include code used to optimize these steps and can be tested using the sample test data. The troubleshooting sections for the quantification step include a short explanation of the optimization and validation performed for this step (full code also provided in this repo). 
 
 ### Denoising_Optimization.py
 Python code for optimizing denoising using the unsharp mask. 
@@ -79,7 +82,6 @@ conda install jupyter
 conda install numpy  
 conda install pandas  
 conda install scikit-image  
-conda install pywget  
 
 ### To run the tutorial:
 Run a jupyter notebook instance in that environment by entering the following command into a terminal:
