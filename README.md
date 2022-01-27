@@ -82,6 +82,9 @@ conda install jupyter
 conda install numpy  
 conda install pandas  
 conda install scikit-image  
+conda install scipy
+conda install -c conda-forge scikit-posthocs
+pip install pylr2
 
 ### To run the tutorial:
 Run a jupyter notebook instance in that environment by entering the following command into a terminal:
